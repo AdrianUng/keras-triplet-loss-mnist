@@ -5,6 +5,8 @@ Disclaimer: This script is based on the example of Siamese network provided by *
 
 I have kept the network architecture, as well as the random way of generating the template pairs - (Anchor, Positive) and (Anchor, Negative)
 
+### Python script can be found in 'keras_triplet_mnist.py'
+
 ## Resources
 * Keras 2.1.6
 * Tensorflow 1.8.0
