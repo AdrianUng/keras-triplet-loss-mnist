@@ -5,7 +5,7 @@ Train a Keras model using the Tensorflow function of semi-hard triplet loss, on 
 
 **Disclaimer1**: the major contribution of this script lies in the combination of the tensorflow function with the Keras Model API. For this reason I had to define the function (as well as its support functions) locally.
 
-### Please check out the *Tensorflow page of the function* [here](https://www.tensorflow.org/api_docs/python/tf/contrib/losses/metric_learning/triplet_semihard_loss).
+### Please check out the *Tensorflow documentation page for the function* [here](https://www.tensorflow.org/api_docs/python/tf/contrib/losses/metric_learning/triplet_semihard_loss).
 Make sure you are using the same tensorflow version!
 
 ### Python script can be found in the ipython notebook 'Triplet_loss_KERAS_semi_hard_from_TF.ipynb'
