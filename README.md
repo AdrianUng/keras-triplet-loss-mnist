@@ -131,7 +131,7 @@ decomposed_gray = pca.fit_transform(x_embeddings_before_train)
 
 ### I hope this script will be helpful to anyone that wants to use Triplet Loss with Keras
 
-## References:
+## References and Other resources:
 
 (1) F. Schroff and J. Philbin, “FaceNet: A Unified Embedding for Face Recognition and Clustering,” in Proceedings of the IEEE conference on computer vision and pattern recognition (CVPR), 2015, pp. 815–823. [arxiv link](https://arxiv.org/abs/1503.03832)
 
