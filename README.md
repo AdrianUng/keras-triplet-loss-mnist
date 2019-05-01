@@ -1,7 +1,7 @@
 # Keras-Triplet-loss-MNIST
 Train a Keras model using the Tensorflow function of semi-hard triplet loss, on the MNIST dataset.
 
-![alt text](pca_decomposition_before_after.png "Logo Title Text 1")
+![alt text](images/pca_decomposition_before_after.png "Logo Title Text 1")
 
 **Disclaimer1**: the major contribution of this script lies in the combination of the tensorflow function with the Keras Model API. For this reason I had to define the function (as well as its support functions) locally.
 
@@ -15,7 +15,7 @@ Make sure you are using the same tensorflow version!
 * Tensorflow 1.8.0
 
 ## Triplet Loss explained:
-![alt text](triplet_loss_viz.png "Logo Title Text 1")
+![alt text](images/triplet_loss_viz.png "Logo Title Text 1")
 
 Figures taken from paper introducing Facenet(1). **Figure 2** represents the general idea of encoding images into a series of numbers much smaller than the image's size.
 
@@ -23,7 +23,7 @@ Figures taken from paper introducing Facenet(1). **Figure 2** represents the gen
 
 The **loss function** is defined as:
 
-![alt text](triplet_loss_function_2.png "Logo Title Text 1")
+![alt text](images/triplet_loss_function_2.png "Logo Title Text 1")
 
 Where *d(A,P)* and *d(A,N)* represent the Euclidean distances between the Anchor and the Positive and Negative pairs. *margin* is a parameter helping the network learning a specific distance between positive and negative samples (using the anchor).  
 
@@ -50,7 +50,7 @@ def create_base_network(image_input_shape, embedding_size):
     return base_network
 ```
 
-![alt text](base_network.png "Logo Title Text 1")
+![alt text](images/base_network.png "Logo Title Text 1")
 
 We then define the Model such that the Triplet Loss function receives all the embeddings from each batch, as well as their corresponding labels (used for determining the best triplet-pairs). This is done by defining an input layer for the labels and then concatenating it to the embeddings.
 ```python
@@ -65,7 +65,7 @@ We then define the Model such that the Triplet Loss function receives all the em
   model = Model(inputs=[input_images, input_labels],
                 outputs=labels_plus_embeddings)
 ```
-![alt text](model.png "Logo Title Text 1")
+![alt text](images/model.png "Logo Title Text 1")
 
 ## Training
 In order to train, we need to define some 'dummy' embeddings to pass as **ground truth (y)** values
@@ -127,7 +127,7 @@ decomposed_embeddings = pca.fit_transform(x_embeddings)
 decomposed_gray = pca.fit_transform(x_embeddings_before_train)
 ```
 5. Visualize the separation...
-![alt text](pca_decomposition_before_after.png "Logo Title Text 1")
+![alt text](images/pca_decomposition_before_after.png "Logo Title Text 1")
 
 ### I hope this script will be helpful to anyone that wants to use Triplet Loss with Keras
 
