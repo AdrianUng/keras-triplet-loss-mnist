@@ -135,7 +135,7 @@ decomposed_gray = pca.fit_transform(x_embeddings_before_train)
 
 (1) F. Schroff and J. Philbin, “FaceNet: A Unified Embedding for Face Recognition and Clustering,” in Proceedings of the IEEE conference on computer vision and pattern recognition (CVPR), 2015, pp. 815–823. [arxiv link](https://arxiv.org/abs/1503.03832)
 
-(2) [Blog post explaining Triplet loss very well](https://omoindrot.github.io/triplet-loss). [Their github page]
+(2) [Blog post](https://omoindrot.github.io/triplet-loss) explaining Triplet loss very well. [Their github page](https://github.com/omoindrot/tensorflow-triplet-loss)
 
 (3) A. Hermans, L. Beyer, and B. Leibe, “In Defense of the Triplet Loss for Person Re-Identification,” 2017. Loss [arxiv paper](https://arxiv.org/pdf/1703.07737.pdf)
 
