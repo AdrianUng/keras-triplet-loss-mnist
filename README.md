@@ -1,9 +1,9 @@
 # Keras-Triplet-loss-MNIST
-Train a Keras model using Triplet Loss function on MNIST dataset
+Train a Keras model using a naive  Triplet Loss function on MNIST dataset
 
-Disclaimer: This script is based on the example of Siamese network provided by **Keras-team** found [here](https://github.com/keras-team/keras/blob/master/examples/mnist_siamese.py).
-
+**Disclaimer**: This script is based on the example of Siamese network provided by **Keras-team** found [here](https://github.com/keras-team/keras/blob/master/examples/mnist_siamese.py).
 I have kept the network architecture, as well as the random way of generating the template pairs - (Anchor, Positive) and (Anchor, Negative)
+**2nd Disclaimer**: This represents a **naive** implementation of triplet loss because the triplet pairs are being formed only once, at before training the model.
 
 ### Python script can be found in 'keras_triplet_mnist.py'
 
